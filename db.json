@@ -1,0 +1,47 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Changed hard drive on workstation 005",
+      "attention": false,
+      "date": "03-02-2020",
+      "tech": "chad Farrington"
+    },
+    {
+      "id": 2,
+      "message": "CWork station on 007 not posting",
+      "attention": true,
+      "date": "02-01-2020",
+      "tech": "Annrika Julien"
+    },
+    {
+      "id": 3,
+      "message": "Changed memory  on workstation 050",
+      "attention": false,
+      "date": "03-14-2020",
+      "tech": "John Jones"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Chad",
+      "lastName": "Farrington"
+    },
+    {
+      "id": 2,
+      "firstName": "Annrika",
+      "lastName": "Julien"
+    },
+    {
+      "id": 3,
+      "firstName": "John",
+      "lastName": "Jones"
+    },
+    {
+      "firstName": "Alexio",
+      "lastName": "Edwards",
+      "id": 4
+    }
+  ]
+}
