@@ -5,11 +5,11 @@
       "message": "Changed hard drive on workstation 005",
       "attention": false,
       "date": "03-02-2020",
-      "tech": "chad Farrington"
+      "tech": "Chad Farrington"
     },
     {
       "id": 2,
-      "message": "CWork station on 007 not posting",
+      "message": "Changed station on 007 not posting",
       "attention": true,
       "date": "02-01-2020",
       "tech": "Annrika Julien"
