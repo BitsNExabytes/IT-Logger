@@ -33,7 +33,7 @@ const Logs = () => {
 
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 1000);
   };
 
   if (loading) {
@@ -43,7 +43,7 @@ const Logs = () => {
   return (
     <ul className='collection with-header'>
       <li className='collection-header'>
-        <h4 className='center'> System Logs</h4>
+        <h4 className='center cyan-text text-darken-3 '> System Logs</h4>
       </li>
 
       {!loading && logs.length === 0 ? (

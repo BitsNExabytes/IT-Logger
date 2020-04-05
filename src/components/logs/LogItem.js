@@ -30,7 +30,7 @@ const LogItem = ({ log }) => {
         </span>
 
         <a href='#!' className='secondary-content'>
-          <i className='material-icons grey-text'>delete</i>
+          <i className='material-icons cyan-text text-darken-2'>delete</i>
         </a>
       </div>
     </li>
