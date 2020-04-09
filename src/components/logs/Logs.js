@@ -1,42 +1,18 @@
-import React, { useState, useEffect } from 'react';
-// log component for Logs
-
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import Preloader from '../layout/Preloader';
 import LogItem from './LogItem';
+import PropTypes from 'prop-types';
+import { getLogs } from '../../actions/logActions';
 
-const Logs = () => {
-  //Component level state
-  const [logs, setLogs] = useState([]);
-  const [loading, setLoading] = useState(false);
-
+const Logs = ({ log: { logs, loading }, getLogs }) => {
   // By using this Hook, you tell React that your component needs to do something after render.
   useEffect(() => {
     getLogs();
     // eslint-disable-next-line
   }, []);
 
-  //Retrieve logs
-  const getLogs = async () => {
-    //set loading to true while doing the fetch
-    setLoading(true);
-
-    //fetch the logs
-    const res = await fetch('/logs');
-
-    //format the data as json
-    const data = await res.json();
-
-    //set the logs to the data retrieved
-    setLogs(data);
-
-    //set loading back to false
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  };
-
-  if (loading) {
+  if (loading || logs === null) {
     return <Preloader />;
   }
 
@@ -49,10 +25,21 @@ const Logs = () => {
       {!loading && logs.length === 0 ? (
         <p className='center'>No logs to show</p>
       ) : (
-        logs.map(log => <LogItem log={log} key={log.id} />)
+        logs.map((log) => <LogItem log={log} key={log.id} />)
       )}
     </ul>
   );
 };
 
-export default Logs;
+Logs.propTypes = {
+  log: PropTypes.object.isRequired,
+  getLogs: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  //log is the name of the prop
+  log: state.log,
+});
+
+// conect redux to your component actions are entered as a second parameter
+export default connect(mapStateToProps, { getLogs })(Logs);

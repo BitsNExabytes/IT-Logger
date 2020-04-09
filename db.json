@@ -13,13 +13,6 @@
       "attention": true,
       "date": "02-01-2020",
       "tech": "Annrika Julien"
-    },
-    {
-      "id": 3,
-      "message": "Changed memory  on workstation 050",
-      "attention": false,
-      "date": "03-14-2020",
-      "tech": "John Jones"
     }
   ],
   "techs": [
