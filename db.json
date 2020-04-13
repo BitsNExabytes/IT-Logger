@@ -2,17 +2,10 @@
   "logs": [
     {
       "id": 1,
-      "message": "Changed hard drive on workstation 005",
+      "message": "Hard drive repaired at Station 101",
       "attention": false,
-      "date": "03-02-2020",
-      "tech": "Chad Farrington"
-    },
-    {
-      "id": 2,
-      "message": "Changed station on 007 not posting",
-      "attention": true,
-      "date": "02-01-2020",
-      "tech": "Annrika Julien"
+      "tech": "John Jones",
+      "date": "2020-04-13T01:23:12.465Z"
     }
   ],
   "techs": [
@@ -27,14 +20,19 @@
       "lastName": "Julien"
     },
     {
-      "id": 3,
-      "firstName": "John",
-      "lastName": "Jones"
-    },
-    {
       "firstName": "Alexio",
       "lastName": "Edwards",
       "id": 4
+    },
+    {
+      "firstName": "greg",
+      "lastName": "harris",
+      "id": 5
+    },
+    {
+      "firstName": "jasmin",
+      "lastName": "harris",
+      "id": 6
     }
   ]
 }
